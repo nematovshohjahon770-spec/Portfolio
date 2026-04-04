@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.container{
+    max-width: 1720px;
+    margin: auto;
+}
+body{
+    background: #000000;
+    font-family: Poppins;    
+}
+.gradient-bg {
+  background: linear-gradient(to bottom, #ffffff, #3a3a3a);
+}
