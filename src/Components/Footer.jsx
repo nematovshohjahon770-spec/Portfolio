@@ -1,4 +1,5 @@
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 import img from "../assets/persn2.png";
 import { Link } from "react-router-dom";
 export default function Footer() {
@@ -17,6 +18,7 @@ export default function Footer() {
        <Link to="figma">Figma</Link>
       </div>
 
+
       <div className="flex flex-col align-right text-2xl gap-5 font-mono mt-16.5">
         <h2 className="text-3xl font-bold">Professional Links</h2>
         <Link to="/">Home</Link>
@@ -31,9 +33,15 @@ export default function Footer() {
           <p>@ 2026 Nematjanov Shoxjahon All Rights Reserved</p>
         </div>
         <div className="icons flex gap-2.5">
-          <Link to="facebook" className="border py-2 px-2 rounded-full flex items-center"><FaFacebook size={30}/></Link >
-          <Link to="instagram" className="border py-2 px-2 rounded-full flex items-center"><FaInstagram size={30}/></Link>
-          <Link to="/nematjanovv" className="border py-2 px-2 rounded-full"><FaTwitter size={30}/></Link>
+          <motion.a href="https://t.me/nematjaanov" className="border py-2 px-2 rounded-full flex items-center"
+          whileHover={{ scale: 1.1}}
+          ><FaTelegram size={30}/></motion.a>
+          <motion.a href="nematjanovv" className="border py-2 px-2 rounded-full flex items-center"
+           whileHover={{scale: 1.1}}
+          ><FaInstagram size={30}/></motion.a>
+          <motion.a href="" to="https://instagram.com/nematjanovv.001" className="border py-2 px-2 rounded-full"
+           whileHover={{scale: 1.1}}
+          ><FaTwitter size={30}/></motion.a>
         </div>
       </div>
 
